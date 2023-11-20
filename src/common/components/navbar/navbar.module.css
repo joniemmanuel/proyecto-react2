@@ -1,0 +1,53 @@
+.container {
+    background-color: white;
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo > a {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: #087EA4;
+}
+
+.logo img {
+    width: 60px;
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav > a {
+    position: relative;
+    color: hsl(0, 0%, 0%);
+    font-weight: 500;
+}
+
+.nav a::after{
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 50%);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+
+/* .login {
+
+} */
